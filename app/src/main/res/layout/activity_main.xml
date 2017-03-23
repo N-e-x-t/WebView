@@ -8,29 +8,29 @@
 
 
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:hint="Enter link"
-        android:focusable="true"
-        android:textColorHighlight="#ff7eff15"
-        android:textColorHint="#ffff25e6"
-        android:layout_toRightOf="@+id/button"
-        />
-
-
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go"
         android:id="@+id/button"
         android:layout_alignTop="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
          />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Enter link"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        />
+
     <WebView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/webView"
         android:layout_below="@+id/button"
